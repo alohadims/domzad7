@@ -29,7 +29,7 @@ def show_contacts(phone_list: list):
 	else:
 		print()
 		for i, contact in enumerate(phone_list, 1):
-			print(f'\t{i}. {contact[0]:20} {contact[1]:13} {contact[2]:20}')
+			print(f'\t{i}. {contact[0]:30} {contact[1]:13} {contact[2]:20}')
 		print()
 
 
@@ -78,6 +78,10 @@ def success_del():
 
 def success_find():
 	print('Контакт успешно найден!')
+
+
+def success_new():
+	print('Контакт успешно создан!')
 
 
 def delete_confirm(contact: str):

@@ -17,6 +17,7 @@ def start():
             case 4:
                 new_contact = list(view.create_new_contact())
                 model.add_new_contact(new_contact)
+                view.success_new()
             case 5:
                 clean = view.select_contact('Введите удаляемый контакт')
                 contact = model.get_contact(clean)
